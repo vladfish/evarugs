@@ -91,6 +91,7 @@ h6{
 
 .main{
   padding-top: 18.7rem;
+  padding-bottom: 10.4rem;
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,16 +136,42 @@ h6{
 
 .main__header{
   font-family: 'Museo Sans Cyrl 700';
-  font-weight: 700;
   font-size: 7.6rem;
   line-height: 1.2;
 }
 
+.main__description-wrap{
+  display: flex;
+  align-items: center;
+}
+
 .main_description{
   max-width: 52.8rem;
+  margin-bottom: 4.1rem;
   font-size: 1.4rem;
   line-height: 1.5;
-  margin-bottom: 4.1rem;
+}
+
+.main__button-play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.2rem;
+  height: 13.2rem;
+  margin-left: 33.1rem;
+  border-radius: 50%;
+  background-color: #391917;
+  cursor: pointer;
+}
+
+.main__button-dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #151515;
 }
 
 .main__button{
@@ -162,6 +189,48 @@ h6{
   margin-bottom: 8.8rem;
 }
 
+/* slider */
+
+.main-slider__wrap {
+  max-width: 41.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-slider__arrow{
+  width: 3.2rem;
+  height: 2.2rem;
+  margin-left: 2.8rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.main-slider__slide {
+  position: relative;
+  width: 16rem;
+  height: 10.5rem;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+.main-slider__slide span{
+  position: absolute;
+  left: 1.2rem;
+  bottom: .6rem;
+  transform: translate(0, 0);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.main-slider__slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* footer */
+
 .footer{
   background: #030102;
   color: #FFFF;
@@ -170,7 +239,8 @@ h6{
 }
 
 .footer .container{
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -200,3 +270,4 @@ h6{
   font-size: 1.4rem;
   line-height: 1.43;
 }
+
